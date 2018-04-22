@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two column layout</title>
+    <style>
+
+        html {
+          height: 100%;
+        }
+
+        body {
+          min-height: 100%;
+          display: grid;
+          grid-template-rows: 1fr auto;
+        }
+
+        .header {
+          background: #ff7f50;
+          padding: 20px;
+        }
+
+        .menu {
+          padding: 20px;
+          margin: 0 0 20px 0;
+        }
+
+        .footer {
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+
+
+
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+          margin: 0;
+        }
+
+        .footer {
+          background: #eccc68;
+          padding: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+<header class="header">Header</header>
+<div class="menu"></div>
+<div class="content"></div>
+<footer class="footer">Footer</footer>
+</body>
+</html>
